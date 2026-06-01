@@ -1,7 +1,7 @@
 {
-  "name": "my-peer-server",
+  "name": "hamoudaspace-peer-server",
   "version": "1.0.0",
-  "description": "Custom signaling server for HamoudaSpace",
+  "description": "Custom signaling server for HamoudaSpace WebRTC app",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
