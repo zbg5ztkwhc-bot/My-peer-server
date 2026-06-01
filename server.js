@@ -1,9 +1,8 @@
 const { PeerServer } = require('peer');
 
-// process.env.PORT is required by Koyeb to dynamically assign a port
-const port = process.env.PORT || 9000;
+// Hugging Face automatically routes traffic through port 7860
+const port = process.env.PORT || 7860;
 
-// Initialize the PeerJS signaling server
 const peerServer = PeerServer({ 
   port: port, 
   path: '/myapp',
@@ -18,4 +17,4 @@ peerServer.on('disconnect', (client) => {
   console.log(`Client disconnected: ${client.getId()}`);
 });
 
-console.log(`PeerJS Signaling Server running on port ${port}`);
+console.log(`PeerJS Signaling Server running on Hugging Face port ${port}`);
